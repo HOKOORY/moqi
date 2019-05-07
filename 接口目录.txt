@@ -1,0 +1,32 @@
+http://ip/sing/public/index.php/api/v1/
+
+
+saveuser  //创建用户 传入code , name , usersign , wxid , wxavatar
+updatauser //更新用户 传入code , name , usersign , wxid , wxavatar
+
+
+getuserbycode //查询用户 传入code
+getuserbyid //查询用户 传入用户user_id
+
+gettoken //获取token 传入code
+
+savesing //保存歌曲 传入name , duration , time , user_id , pricing header传Token
+deletesing //删除歌曲 传入user_id, sing_id  header传Token
+restoresing//恢复歌曲 传入user_id, sing_id  header传Token
+
+getsing //获取歌曲 传入id
+
+like//歌曲点赞，传入user_id, sing_id  header传token
+getsinglike //获取歌曲点赞数，传入sing_id
+getuserlike //获取用户点赞数，传入user_id
+canclelike //取消点赞，传入user_id, sing_id
+
+islike  // 判断当前用户是否点赞 ， 传入user_id, sing_id  header传token
+
+getuserallsing // 获取这个用户的所有发布的歌曲 ， 传入user_id
+
+createpreorder//下预订单      传入seller_user_id, buyer_user_id, sing_id， header传token
+
+upload //上传歌曲，key=mp3 内容是文件
+userinfo_buy//查询该用户买的歌曲 传入id
+userinfo_sell//查询该用户卖的歌曲 传入 id
